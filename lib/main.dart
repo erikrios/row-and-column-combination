@@ -15,18 +15,21 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Scaffold(
         appBar: AppBar(
-          title: Text('Demo Row & Column'),
+          title: Text('Row & Column'),
         ),
         body: Center(
-          child: Row(
+          child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Column(
+              Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   RaisedButton(
                     child: Text('Button 1'),
                     onPressed: () {},
+                  ),
+                  Container(
+                    width: 10,
                   ),
                   RaisedButton(
                     child: Text('Button 2'),
@@ -35,14 +38,17 @@ class HomePage extends StatelessWidget {
                 ],
               ),
               Container(
-                width: 10,
+                height: 10,
               ),
-              Column(
+              Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   RaisedButton(
                     child: Text('Button 3'),
                     onPressed: () {},
+                  ),
+                  Container(
+                    width: 10,
                   ),
                   RaisedButton(
                     child: Text('Button 4'),
@@ -51,14 +57,17 @@ class HomePage extends StatelessWidget {
                 ],
               ),
               Container(
-                width: 10,
+                height: 10,
               ),
-              Column(
+              Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   RaisedButton(
                     child: Text('Button 5'),
                     onPressed: () {},
+                  ),
+                  Container(
+                    width: 10,
                   ),
                   RaisedButton(
                     child: Text('Button 6'),
